@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071329">
+  <meta name="description" content="Enter Luminara, a moonlit kingdom of forgotten memories, dreams, and magic.">
+  <title>Luminara — The Forgotten Kingdom</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#story">Skip to story</a>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="logo" href="#top">✧ Luminara</a>
+
+    <div class="nav-links">
+      <a href="#story">Story</a>
+      <a href="#character">Dreamkeeper</a>
+      <a href="#library">Library</a>
+      <a href="#projects">Projects</a>
+    </div>
+
+    <span class="moon" aria-hidden="true">☾</span>
+
+    <button
+      id="soundToggle"
+      class="sound-toggle"
+      type="button"
+      aria-pressed="false"
+    >
+      ♫ Sound: Off
+    </button>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="star-field" aria-hidden="true">
+      <span class="star star-one">✦</span>
+      <span class="star star-two">✧</span>
+      <span class="star star-three">✦</span>
+      <span class="star star-four">✧</span>
+      <span class="star star-five">·</span>
+      <span class="star star-six">✦</span>
+      <span class="star star-seven">·</span>
+      <span class="star star-eight">✧</span>
+      <span class="star star-nine">✧</span>
+      <span class="star star-ten">✦</span>
+    </div>
+
+    <div class="hero-orb" aria-hidden="true">☾</div>
+
+    <section class="welcome">
+      <p class="eyebrow">A LITTLE KINGDOM BEYOND THE MOON</p>
+
+      <h1>
+        Somewhere,<br>
+        <span>magic remembers.</span>
+      </h1>
+
+      <p class="intro">
+        Beyond the moonlight lies a kingdom that has
+        forgotten how to shine. Its memories are fading,
+        and a little dreamkeeper needs your help to
+        find the lost magic.
+      </p>
+
+      <button id="enterBtn" type="button">
+        Enter the Kingdom ✧
+      </button>
+
+      <p class="hint">A little adventure is waiting for you</p>
+    </section>
+
+    <p class="hero-caption" aria-hidden="true">
+      ✧ follow the light ✧
+    </p>
+  </header>
+
+  <main>
+    <section class="story section" id="story">
+      <p class="eyebrow">CHAPTER I · THE BEGINNING</p>
+
+      <h2>The river is forgetting...</h2>
+
+      <p>
+        Once upon a time, Luminara glowed with the
+        memories of its people. Every laugh became a
+        star, every promise became a light, and every
+        cherished moment flowed through a magical river.
+      </p>
+
+      <p>
+        But one night, the stars began to disappear.
+        The river grew dim, and the people slowly
+        forgot the things they loved most.
+      </p>
+
+      <p>
+        There was only one little girl who could still
+        remember. A girl in a blue dress, carrying a
+        secret in her tiny doll-shaped hair clip.
+      </p>
+
+      <div class="chapter-symbol" aria-hidden="true">✧ 〜 ☾ 〜 ✧</div>
+    </section>
+
+    <section class="character section" id="character">
+      <p class="eyebrow">CHAPTER II · THE DREAMKEEPER</p>
+
+      <h2>Meet the girl who remembers.</h2>
+
+      <img
+        class="character-art"
+        src="luminara-girl.png-Copy(2).png"
+        alt="Luminara, the little dreamkeeper, beneath the moonlit sky"
+        loading="lazy"
+      >
+
+      <p class="character-description">
+        Gentle, curious, and a little mysterious,
+        Luminara wanders through forgotten places,
+        collecting the memories that everyone else
+        has left behind.
+      </p>
+
+      <p class="character-detail">
+        ✧ Her tiny doll-shaped hair clip holds a secret.
+      </p>
+
+      <button id="greetBtn" type="button">
+        Say hello to Luminara ✧
+      </button>
+
+      <p
+        id="greetingMessage"
+        class="greeting-message"
+        aria-live="polite"
+        hidden
+      ></p>
+
+      <div class="character-sheet">
+        <p class="eyebrow">HER LITTLE CHARACTER SHEET</p>
+        <h3>Who is Luminara?</h3>
+
+        <p><strong>Name:</strong> Luminara, the Dreamkeeper</p>
+        <p><strong>Species:</strong> Human girl</p>
+        <p><strong>Appearance:</strong> Soft black hair, curious eyes, a blue dress, and a tiny doll-shaped hair clip.</p>
+        <p><strong>Personality:</strong> Gentle, curious, imaginative, and determined to keep her promises.</p>
+        <p><strong>Talent:</strong> Finding forgotten memories and restoring their magic.</p>
+        <p><strong>Origin:</strong> She lives in a kingdom where memories are fading from a magical river.</p>
+        <p><strong>Dream:</strong> To bring every forgotten memory home.</p>
+        <p><strong>Tagline:</strong> “Even forgotten things deserve to be remembered.”</p>
+      </div>
+
+      <button
+        id="secretBtn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="secretMessage"
+      >
+        Discover her secret ✧
+      </button>
+
+      <p id="secretMessage" class="secret-message" hidden>
+        “I promised I would never forget you.”
+        <br><br>
+        But who was she talking to?
+      </p>
+
+      <button
+        id="clipSecret"
+        class="clip-secret"
+        type="button"
+        aria-expanded="false"
+        aria-controls="easterEggMessage"
+      >
+        ✧ Touch the little doll ✧
+      </button>
+
+      <p
+        id="easterEggMessage"
+        class="easter-egg-message"
+        hidden
+        aria-live="polite"
+      >
+        You found the hidden memory!
+
+        <br><br>
+
+        The little doll was Luminara's very first friend.
+        Even when the stars went dark, she remembered
+        the promise she had made. A tiny light flickered
+        deep inside the forgotten library.
+      </p>
+    </section>
+
+    <section class="library section" id="library">
+      <p class="eyebrow">CHAPTER III · THE FORGOTTEN LIBRARY</p>
+
+      <h2>Every memory holds a little magic.</h2>
+
+      <p class="library-intro">
+        Beneath an abandoned tower lies a library filled
+        with dolls. Each one holds a memory someone,
+        somewhere, has forgotten.
+      </p>
+
+      <p class="library-question">
+        Which memory will you awaken first?
+      </p>
+
+      <div class="memory-collection">
+        <button class="memory-card" type="button" data-memory="dream">
+          <span class="memory-icon" aria-hidden="true">✧</span>
+          <span>A Lost Dream</span>
+          <span class="card-hint">Open memory ↗</span>
+        </button>
+
+        <button class="memory-card" type="button" data-memory="promise">
+          <span class="memory-icon" aria-hidden="true">♡</span>
+          <span>An Old Promise</span>
+          <span class="card-hint">Open memory ↗</span>
+        </button>
+
+        <button class="memory-card" type="button" data-memory="friend">
+          <span class="memory-icon" aria-hidden="true">☾</span>
+          <span>A Forgotten Friend</span>
+          <span class="card-hint">Open memory ↗</span>
+        </button>
+      </div>
+
+      <div class="memory-reveal" aria-live="polite">
+        <p id="memoryTitle" class="memory-title">A page waiting to be opened...</p>
+        <p id="memoryMessage">
+          Choose a memory to discover its secret.
+        </p>
+      </div>
+    </section>
+
+    <section class="ending section" id="ending">
+      <p class="eyebrow">CHAPTER IV · THE LAST MEMORY</p>
+
+      <h2>She finally remembered.</h2>
+
+      <p class="ending-story">
+        Luminara looked at the doll-shaped clip in her
+        hair. Suddenly, she remembered the lonely doll
+        she had found long ago in the forgotten library.
+      </p>
+
+      <p class="ending-story">
+        “I promised I would never forget you,” she
+        whispered. “Even if the whole world does.”
+      </p>
+
+      <p class="ending-story">
+        And in that moment, the river began to glow.
+        One by one, the forgotten memories returned.
+        Luminara remembered how to shine.
+      </p>
+
+      <div class="river-symbol" aria-hidden="true">
+        ✧ 〜 ✧ 〜 ✧
+      </div>
+
+      <p class="ending-note">
+        Perhaps magic was never lost.
+        Perhaps it was waiting for someone to remember.
+      </p>
+
+      <button id="restartBtn" type="button">
+        Return to the beginning ↗
+      </button>
+    </section>
+
+    <section class="projects section" id="projects">
+      <p class="eyebrow">LITTLE WORLDS · BIG DREAMS</p>
+
+      <h2>My little creations.</h2>
+
+      <p class="projects-intro">
+        Every creation holds a piece of a dream.
+        These are the little worlds born from Luminara's
+        imagination.
+      </p>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="project-icon" aria-hidden="true">🌙</span>
+          <p class="project-number">01 — THE KINGDOM</p>
+          <h3>Luminara</h3>
+          <p>
+            An interactive fantasy story where visitors
+            explore a forgotten kingdom, awaken memories,
+            and help the river shine again.
+          </p>
+          <span class="project-tag">Interactive storytelling</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-icon" aria-hidden="true">🌷</span>
+          <p class="project-number">02 — THE GARDEN</p>
+          <h3>Memory Garden</h3>
+          <p>
+            A creative concept for a magical garden where
+            each flower represents a cherished moment,
+            a gentle wish, or a dream worth keeping.
+          </p>
+          <span class="project-tag">Worldbuilding concept</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-icon" aria-hidden="true">📖</span>
+          <p class="project-number">03 — THE JOURNAL</p>
+          <h3>The Dollkeeper's Journal</h3>
+          <p>
+            An illustrated storybook concept that imagines
+            the hidden lives of forgotten dolls and the
+            memories they carry.
+          </p>
+          <span class="project-tag">Storybook concept</span>
+        </article>
+      </div>
+
+      <p class="projects-note">
+        Some worlds begin as ideas. Every idea is a little
+        doorway to something wonderful.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-logo">✧ Luminara ✧</p>
+    <p>A story about little things and forgotten dreams.</p>
+    <p>Created for the haX.baby hackathon.</p>
+    <p class="credits">
+      Credits: Fonts by Google Fonts. Character artwork and
+      audio should be credited to their original creators.
+    </p>
+    <a href="#top">Back to the stars ↑</a>
+  </footer>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="luminara-music.mp3.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
